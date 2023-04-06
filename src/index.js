@@ -2,20 +2,103 @@ import './less/index.less'
 
 // Your code goes here!
 // BACKGROUND
-const mainbackground = document.querySelector('.container')
+const mainbackground = document.querySelector('.home')
 console.log(mainbackground)
 
-// H1 HEADING
+mainbackground.addEventListener('click', function onClick(event) {
+    event.target.style.backgroundColor = 'lightblue';
+})
+mainbackground.addEventListener('dblclick',
+function offClick(event) {
+    event.target.style.backgroundColor = 'yellow'
+})
+
+mainbackground.addEventListener('mouseover',
+function offMouse(event) {
+    event.target.style.backgroundColor = 'lightgreen'
+})
+
+
+// loading.....
+
+window.onload = function (event) {
+    console.log(`event ${event.type} fired!`)
+    const heading = document.querySelector('h1')
+    heading.textContent ='READY TO GO'
+
+// copy
+window.addEventListener('copy', () => {
+    // navigator is a global object that is availible.
+    // navigator has a clipboard object which has a 
+    // readText method which returns a promise.
+    navigator.clipboard.readText()
+    .then(text => {
+        // console.log(text)
+        heading.textContent += text
+    })
+ })
+ 
+document.body.addEventListener('click', event => {
+    event.target.classList.toggle('mirror')
+})
+
+}
+// H1 HEADING {????????????}
 const logoHeading = document.querySelector('.logo-heading');
 console.log(logoHeading)
+
+logoHeading.addEventListener('keydown', (event) => {
+console.log(event.key)
+
+
+})
+
+
 
 // NAVAGATION BAR
 const navA = document.querySelectorAll('nav a');
 console.log(navA)
 
+navA[0].addEventListener('mouseover',
+function navColorChange(event) {
+    event.target.style.color = 'red'
+})
+
+navA[1].addEventListener('mouseover',
+function navColorChange(event) {
+    event.target.style.color = 'blue'
+})
+
+navA[2].addEventListener('mouseover',
+function navColorChange(event) {
+    event.target.style.color = 'green'
+})
+
+navA[3].addEventListener('mouseover',
+function navColorChange(event) {
+    event.target.style.color = 'purple'
+})
+
+
+
+// ------------!!!!!!!!!!!!!!!!!!
+window.keypress = function (event) {
+    console.log(`event ${event.type} started!`)
+    
+    if(navA === 'Escape'){
+        navA[0].target.style.backgroundColor = 'black'
+    }
+}
+
+
+
 // MAIN IMAGE
 const newImage = document.querySelector('.intro img');
 console.log(newImage)
+
+newImage.addEventListener('onkeydown', (event) => {
+    console.log(event.keyCode) 
+})
 
 // H2 HEADINGS
 const newH2 = document.querySelector('.intro h2');
@@ -29,9 +112,6 @@ console.log(newText)
 const newImageContent = document.querySelectorAll('.img-content');
 console.log(newImageContent)
 
-// --------------------------------
-// EVENT LISTENERS
-// --------------------------------
 
 
 
