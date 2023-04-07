@@ -1,22 +1,7 @@
 import './less/index.less'
 
 // Your code goes here!
-// BACKGROUND
-// const mainbackground = document.querySelector('.home')
-// console.log(mainbackground)
 
-// mainbackground.addEventListener('click', function onClick(event) {
-//     event.target.style.backgroundColor = 'lightblue';
-// })
-// mainbackground.addEventListener('dblclick',
-// function offClick(event) {
-//     event.target.style.backgroundColor = 'yellow'
-// })
-
-// mainbackground.addEventListener('mouseover',
-// function offMouse(event) {
-//     event.target.style.backgroundColor = 'lightgreen'
-// })
 
 
 // loading.....
@@ -83,71 +68,69 @@ for(let destination of destinations) {
 }
  
 
-}
+// BACKGROUND
+const mainbackground = document.querySelector('.home')
+console.log(mainbackground)
+
+mainbackground.addEventListener('click', function onClick(event) {
+    event.target.style.backgroundColor = 'lightblue';
+})
+mainbackground.addEventListener('dblclick',
+function offClick(event) {
+    event.target.style.backgroundColor = 'yellow'
+})
+
+mainbackground.addEventListener('mouseover',
+function offMouse(event) {
+    event.target.style.backgroundColor = 'lightgreen'
+})
+
+
 // // H1 HEADING {????????????}
-// const logoHeading = document.querySelector('.logo-heading');
-// console.log(logoHeading)
+const logoHeading = document.querySelector('.logo-heading');
+console.log(logoHeading)
 
 
 
 
 
-// // NAVAGATION BAR
-// const navA = document.querySelectorAll('nav a');
-// console.log(navA)
+// NAVAGATION BAR
+const navA = document.querySelectorAll('nav a');
+console.log(navA)
 
-// navA[0].addEventListener('mouseover',
-// function navColorChange(event) {
-//     event.target.style.color = 'red'
-// })
+navA[0].addEventListener('mouseover',
+function navColorChange(event) {
+    event.target.style.color = 'red'
+})
 
-// navA[1].addEventListener('mouseover',
-// function navColorChange(event) {
-//     event.target.style.color = 'blue'
-// })
+navA[1].addEventListener('mouseover',
+function navColorChange(event) {
+    event.target.style.color = 'blue'
+})
 
-// navA[2].addEventListener('mouseover',
-// function navColorChange(event) {
-//     event.target.style.color = 'green'
-// })
+navA[2].addEventListener('mouseover',
+function navColorChange(event) {
+    event.target.style.color = 'green'
+})
 
-// navA[3].addEventListener('mouseover',
-// function navColorChange(event) {
-//     event.target.style.color = 'purple'
-// })
+navA[3].addEventListener('mouseover',
+function navColorChange(event) {
+    event.target.style.color = 'purple'
+})
 
 
 
-// // ------------!!!!!!!!!!!!!!!!!!
-// window.keypress = function (event) {
-//     console.log(`event ${event.type} started!`)
+// ------------!!!!!!!!!!!!!!!!!!
+window.keypress = function (event) {
+    console.log(`event ${event.type} started!`)
     
-//     if(navA === 'Escape'){
-//         navA[0].target.style.backgroundColor = 'black'
-//     }
-// }
+    if(navA === 'Escape'){
+        navA[0].target.style.backgroundColor = 'black'
+    }
+}
 
+}
 
-
-// // MAIN IMAGE
-// const newImage = document.querySelector('.intro img');
-// console.log(newImage)
-
-// newImage.addEventListener('onkeydown', (event) => {
-//     console.log(event.keyCode) 
-// })
-
-// // H2 HEADINGS
-// const newH2 = document.querySelector('.intro h2');
-// console.log(newH2)
-
-// // ARTICLE TEXT
-// const newText = document.querySelectorAll('.text-content');
-// console.log(newText)
-
-// // ARTICLE IMAGES
-// const newImageContent = document.querySelectorAll('.img-content');
-// console.log(newImageContent)
 
 
 
