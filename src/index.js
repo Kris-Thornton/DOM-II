@@ -38,9 +38,14 @@ window.addEventListener('copy', () => {
     })
  })
  
+document.body.classList.add('mirror') 
+const mirror = document.querySelector('.mirror')
+
 document.body.addEventListener('click', event => {
     event.target.classList.toggle('mirror')
 })
+
+console.log(mirror)
 
 }
 // H1 HEADING {????????????}
