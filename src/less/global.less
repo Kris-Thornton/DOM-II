@@ -1,6 +1,23 @@
 * {
   box-sizing: border-box;
+
+  
+
+&.mirror {
+  transform: rotateY(180deg);
+  transition: transform 1s ease-in-out;
+  
 }
+
+&.upAndDown {
+  transform: rotateX(180deg);
+  transition: transform 1s ease-in-out;
+  
+}
+
+}
+
+
 
 html {
   font-size: 62.5%;
